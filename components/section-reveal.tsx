@@ -17,18 +17,14 @@ export function SectionReveal({
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Respect prefers-reduced-motion
-    if (
+    // Respect prefers-reduced-motion and fallback
+    const prefersReducedMotion =
       typeof window !== "undefined" &&
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
-      setIsVisible(true);
-      return;
-    }
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    if (!("IntersectionObserver" in window)) {
-      setIsVisible(true);
-      return;
+    if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+      const timer = setTimeout(() => setIsVisible(true), 0);
+      return () => clearTimeout(timer);
     }
 
     const observer = new IntersectionObserver(

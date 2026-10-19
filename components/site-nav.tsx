@@ -68,7 +68,7 @@ export function SiteNav() {
       if (targetEl) {
         targetEl.scrollIntoView({ behavior: "smooth" });
       } else {
-        window.location.hash = href;
+        window.history.pushState(null, "", href);
       }
     }
   };

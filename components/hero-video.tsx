@@ -29,9 +29,6 @@ export function HeroVideo({
   const globeRef = useRef<HTMLVideoElement>(null);
   const networkRef = useRef<HTMLVideoElement>(null);
 
-  const [globeReady, setGlobeReady] = useState(false);
-  const [networkReady, setNetworkReady] = useState(false);
-
   // Scroll interpolation states
   const [globeScale, setGlobeScale] = useState(1);
   const [globeOpacity, setGlobeOpacity] = useState(1);
@@ -123,8 +120,6 @@ export function HeroVideo({
           loop
           playsInline
           preload="auto"
-          onLoadedData={() => setNetworkReady(true)}
-          onCanPlay={() => setNetworkReady(true)}
         >
           <source src={networkSrc} type="video/mp4" />
         </video>
@@ -149,8 +144,6 @@ export function HeroVideo({
           loop
           playsInline
           preload="auto"
-          onLoadedData={() => setGlobeReady(true)}
-          onCanPlay={() => setGlobeReady(true)}
         >
           <source src={globeSrc} type="video/mp4" />
         </video>

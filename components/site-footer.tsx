@@ -1,14 +1,10 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { siteConfig } from "@/config/site";
 
 export function SiteFooter() {
-  const [currentYear, setCurrentYear] = useState(2026);
-
-  useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
-  }, []);
+  const currentYear = 2026;
 
   // Filter valid social links (only render when a non-empty, valid URL is provided)
   const validSocialLinks = siteConfig.socialLinks.filter(
