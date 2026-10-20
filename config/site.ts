@@ -71,7 +71,11 @@ Best regards,`,
     { label: "Contact", href: "#contact" },
   ],
   videos: {
-    globe: process.env.NEXT_PUBLIC_GLOBE_VIDEO_URL || "/globe.mp4",
-    network: process.env.NEXT_PUBLIC_NETWORK_VIDEO_URL || "/bg_network.mp4",
+    globe:
+      process.env.NEXT_PUBLIC_GLOBE_VIDEO_URL ||
+      "https://oi2sxhmfg4bsmow1.public.blob.vercel-storage.com/globe.mp4",
+    network:
+      process.env.NEXT_PUBLIC_NETWORK_VIDEO_URL ||
+      "https://oi2sxhmfg4bsmow1.public.blob.vercel-storage.com/bg_network.mp4",
   },
 };
