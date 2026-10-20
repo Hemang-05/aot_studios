@@ -30,18 +30,19 @@ export const siteConfig: SiteConfig = {
   baseline: "Architecture of Thought",
   descriptor: "Architecture of Thought",
   description:
-    "AOT (Architecture of Thought) — Independent product engineering studio designing the systems through which ideas, intelligence and technology become useful products.",
+    "AOT (Architecture of Thought) - Independent product engineering studio designing the systems through which ideas, intelligence and technology become useful products.",
   email: "hello.aot.studio@gmail.com",
-  emailSubject: "Project Inquiry — AOT",
+  emailSubject: "Project Inquiry - AOT",
   emailBodyTemplate:
 `Hi AOT,
 
-I would like to discuss a project with your studio.
+I would like to discuss a project with your team.
 
-1. Who we are:
-2. What we want to build:
-3. Estimated timeline and budget:
-4. Reference links / materials:
+1. Who we are and what we're building:
+2. The problem or opportunity:
+3. What we'd like you to build:
+4. Expected timeline and budget:
+5. Relevant references or existing product links:
 
 Best regards,`,
   services: [
@@ -53,15 +54,15 @@ Best regards,`,
   ],
   socialLinks: [
     {
-      label: "Twitter",
-      href: "", // Set URL when available (only renders when valid URL provided)
-    },
-    {
-      label: "GitHub",
+      label: "LinkedIn",
       href: "", // Set URL when available
     },
     {
-      label: "LinkedIn",
+      label: "X",
+      href: "", // Set URL when available
+    },
+    {
+      label: "Instagram",
       href: "", // Set URL when available
     },
   ],

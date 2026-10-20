@@ -18,16 +18,16 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} — ${siteConfig.baseline}`,
+  title: `${siteConfig.name} - ${siteConfig.baseline}`,
   description: siteConfig.description,
   openGraph: {
-    title: `${siteConfig.name} — ${siteConfig.baseline}`,
+    title: `${siteConfig.name} - ${siteConfig.baseline}`,
     description: siteConfig.description,
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — ${siteConfig.baseline}`,
+    title: `${siteConfig.name} - ${siteConfig.baseline}`,
     description: siteConfig.description,
   },
 };

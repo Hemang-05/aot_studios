@@ -90,10 +90,10 @@ body,
 }
 
 .text-heading {
-  font-size: clamp(28px, 4vw, 47px);
+  font-size: clamp(31px, 4.4vw, 52px);
   font-weight: 600;
   letter-spacing: -0.01em;
-  line-height: 1.1;
+  line-height: 1.12;
   text-transform: uppercase;
   color: #F5F5F5;
 }
@@ -232,4 +232,11 @@ body,
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
   }
+}
+
+/* ── HIDE NEXT.JS DEV OVERLAY INDICATORS ── */
+nextjs-portal,
+[data-nextjs-toast],
+#__next-build-watcher {
+  display: none !important;
 }

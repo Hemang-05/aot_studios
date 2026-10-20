@@ -6,17 +6,17 @@ export function AboutSection() {
     {
       label: "What we build",
       description:
-        "AI-powered applications, web and mobile products, SaaS platforms, and tailored software built around real business needs.",
+        "AI-powered applications, web and mobile products, SaaS platforms, custom software, and intelligent automation - built for real-world business needs.",
     },
     {
       label: "How we work",
       description:
-        "Small, focused engineering teams combining thoughtful product decisions, modern technology, and rapid iteration.",
+        "Product thinking, system architecture, AI integration, and full-stack engineering - combined to build reliable software that can evolve and scale.",
     },
     {
       label: "Our focus",
       description:
-        "From the first technical decisions through launch and refinement, we help turn promising ideas into reliable, usable software.",
+        "From early-stage products to complex technology platforms, we help turn ideas into production-ready software and take them from architecture to launch and beyond.",
     },
   ];
 
@@ -30,7 +30,7 @@ export function AboutSection() {
         {/* Section Header with glowing cyan eyebrow prefix */}
         <SectionReveal>
           <div className="section-head">
-            <span className="text-eyebrow eyebrow-line">01 &mdash; About</span>
+            <span className="text-eyebrow eyebrow-line">01 - About</span>
           </div>
         </SectionReveal>
 
@@ -41,7 +41,7 @@ export function AboutSection() {
               Architecture of Thought.
             </span>{" "}
             <span className="text-[#686868]">
-              Designing the systems through which ideas, intelligence, and technology become useful products.
+              Engineering AI-powered products, software systems, and digital platforms - from simple ideas to complex technology.
             </span>
           </h2>
         </SectionReveal>

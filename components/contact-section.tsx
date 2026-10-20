@@ -8,10 +8,11 @@ export function ContactSection() {
   )}&body=${encodeURIComponent(siteConfig.emailBodyTemplate)}`;
 
   const checklistItems = [
-    "Who you are and the business you represent",
-    "What you want to build",
-    "Your expected timeline and budget range",
-    "Relevant examples or reference links",
+    "Who you are and what you're building",
+    "The problem or opportunity",
+    "What you'd like us to build",
+    "Expected timeline and budget",
+    "Relevant references or existing product links",
   ];
 
   return (
@@ -46,7 +47,7 @@ export function ContactSection() {
         <SectionReveal>
           <div className="section-head">
             <span className="text-eyebrow eyebrow-line">
-              03 &mdash; Contact
+              03 - Contact
             </span>
           </div>
         </SectionReveal>
@@ -61,10 +62,10 @@ export function ContactSection() {
                 <br />
                 build
                 <br />
-                something.
+                <span className="whitespace-nowrap">what&apos;s next.</span>
               </h2>
-              <p className="text-[16px] font-normal leading-[1.7] text-[#999999] max-w-[480px]">
-                Tell us about what you want to build. We partner with founders and teams to engineer intelligent systems, modern software, and production-ready products.
+              <p className="text-[16px] md:text-[16.5px] font-normal leading-[1.7] text-[#999999] max-w-[500px]">
+                Have a product, system, or technical problem in mind? Tell us what you&apos;re building. We work across product development, software engineering, AI integration, and complex technical systems.
               </p>
             </div>
           </SectionReveal>
@@ -72,8 +73,8 @@ export function ContactSection() {
           {/* Right Column: Project Inquiry Area */}
           <SectionReveal delayMs={200}>
             <div className="flex flex-col items-start">
-              <span className="text-[10px] font-medium tracking-[0.28em] uppercase text-[#686868] mb-5">
-                Proposals &amp; Submissions
+              <span className="text-[10px] md:text-[11px] font-medium tracking-[0.28em] uppercase text-[#686868] mb-5">
+                Project Inquiries
               </span>
 
               {/* Direct email link with cyan hover */}
@@ -86,16 +87,16 @@ export function ContactSection() {
               </a>
 
               {/* Inquiry context */}
-              <p className="text-[15px] font-normal leading-[1.7] text-[#999999] max-w-[440px] mt-8">
-                Send proposals, briefs and submissions straight to the inbox. To get a useful answer on the first reply, include:
+              <p className="text-[15px] md:text-[16px] font-normal leading-[1.7] text-[#999999] max-w-[480px] mt-8">
+                Tell us what you&apos;re building, what problem you&apos;re solving, and where you need engineering support.
               </p>
 
               {/* Checklist with glowing cyan dashes */}
-              <ul className="flex flex-col gap-3 max-w-[440px] mt-5 list-none">
+              <ul className="flex flex-col gap-3.5 max-w-[480px] mt-6 list-none">
                 {checklistItems.map((item) => (
                   <li
                     key={item}
-                    className="relative pl-6 text-[14px] font-normal leading-[1.7] text-[#999999]"
+                    className="relative pl-6 text-[14px] md:text-[15px] font-normal leading-[1.7] text-[#999999]"
                   >
                     <span className="absolute left-0 top-[11px] w-3 h-[1px] bg-[rgba(var(--accent),0.85)] shadow-[0_0_6px_rgba(var(--accent),0.5)]" />
                     {item}

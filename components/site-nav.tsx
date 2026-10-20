@@ -89,7 +89,7 @@ export function SiteNav() {
             href="#top"
             onClick={scrollToTop}
             className="flex flex-col items-start group focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white select-none"
-            aria-label={`${siteConfig.name} — ${siteConfig.baseline}`}
+            aria-label={`${siteConfig.name} - ${siteConfig.baseline}`}
           >
             <span className="text-[14px] font-semibold tracking-[0.24em] uppercase text-white transition-colors group-hover:text-white/80">
               {siteConfig.wordmark}

@@ -10,28 +10,28 @@ interface ApproachItem {
 export function ApproachSection() {
   const approachItems: ApproachItem[] = [
     {
-      number: "/ 01",
-      title: "Speed",
+      number: "01",
+      title: "Architecture",
       description:
-        "Focused teams and modern development workflows help move from a clear idea to a working product without unnecessary complexity.",
+        "We design systems around the problem first - choosing the right foundations, boundaries, and technologies without adding complexity for its own sake.",
     },
     {
-      number: "/ 02",
-      title: "Craft",
+      number: "02",
+      title: "Engineering",
       description:
-        "Architecture, interface design, and engineering decisions are made deliberately. Quality matters at every layer.",
+        "Strong products are built on strong foundations. We engineer reliable software across interfaces, application logic, data, integrations, and infrastructure.",
     },
     {
-      number: "/ 03",
+      number: "03",
       title: "Intelligence",
       description:
-        "We use AI where it creates measurable value, integrating models and automation into products rather than adding AI for its own sake.",
+        "We integrate AI where it creates real leverage - from intelligent workflows and automation to models, agents, retrieval, and decision systems.",
     },
     {
-      number: "/ 04",
-      title: "Ownership",
+      number: "04",
+      title: "Evolution",
       description:
-        "From implementation and integrations to deployment and iteration, we focus on building systems that can be understood, maintained, and improved.",
+        "We build for change. Products are designed to be understood, improved, extended, and scaled as users, requirements, and businesses evolve.",
     },
   ];
 
@@ -46,12 +46,12 @@ export function ApproachSection() {
         <SectionReveal>
           <div className="section-head">
             <span className="text-eyebrow eyebrow-line mb-6 block">
-              02 &mdash; Approach
+              02 - Approach
             </span>
-            <h2 className="text-heading max-w-[800px]">
-              Built for the next generation
+            <h2 className="text-heading max-w-[850px]">
+              From first principles
               <br />
-              of digital products.
+              to production.
             </h2>
           </div>
         </SectionReveal>
@@ -62,7 +62,7 @@ export function ApproachSection() {
             {approachItems.map((item) => (
               <div
                 key={item.title}
-                className="group relative p-[clamp(32px,5vw,64px)] flex flex-col gap-5 min-h-[280px] transition-all duration-400 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:shadow-[inset_0_0_0_1px_rgba(var(--accent),0.18)]"
+                className="group relative p-[clamp(32px,5vw,60px)] flex flex-col gap-6 min-h-[300px] transition-all duration-400 ease-[cubic-bezier(0.25,0.1,0.25,1)] hover:shadow-[inset_0_0_0_1px_rgba(var(--accent),0.18)]"
                 style={{
                   background:
                     "radial-gradient(ellipse at top right, rgba(var(--accent), 0.08) 0%, transparent 55%), rgba(0, 0, 0, 0.65)",
@@ -74,12 +74,12 @@ export function ApproachSection() {
                 </span>
 
                 {/* Body paragraph */}
-                <p className="text-[15px] font-normal leading-[1.6] text-[#999999] max-w-[420px]">
+                <p className="text-[16px] lg:text-[16.5px] font-normal leading-[1.68] text-[#999999] max-w-[460px]">
                   {item.description}
                 </p>
 
                 {/* Title anchored to bottom */}
-                <h3 className="text-[clamp(22px,2.5vw,30px)] font-semibold tracking-[-0.01em] uppercase text-[#F5F5F5] mt-auto pt-6">
+                <h3 className="text-[clamp(24px,2.7vw,33px)] font-semibold tracking-[-0.01em] uppercase text-[#F5F5F5] mt-auto pt-8">
                   {item.title}
                 </h3>
 
