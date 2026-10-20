@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Manrope } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { siteConfig } from "@/config/site";
 import "./globals.css";
 
@@ -40,6 +41,7 @@ export default function RootLayout({
     <html lang="en" className={manrope.variable}>
       <body className="bg-black text-[#F5F5F5] antialiased selection:bg-[#222222] selection:text-white font-sans">
         {children}
+        <Analytics />
       </body>
     </html>
   );
