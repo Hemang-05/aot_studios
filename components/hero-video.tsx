@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
+import { siteConfig } from "@/config/site";
 
 interface HeroVideoProps {
   globeSrc?: string;
@@ -20,8 +21,8 @@ interface HeroVideoProps {
  * - Placed at z-0 with pointer-events-none so mousewheel/trackpad scroll pass cleanly through
  */
 export function HeroVideo({
-  globeSrc = "/globe.mp4",
-  networkSrc = "/bg_network.mp4",
+  globeSrc = siteConfig.videos.globe,
+  networkSrc = siteConfig.videos.network,
   globePoster = "/globe-poster.png",
   networkPoster = "/network-poster.png",
   className = "",

@@ -18,6 +18,10 @@ export interface SiteConfig {
     label: string;
     href: string;
   }[];
+  videos: {
+    globe: string;
+    network: string;
+  };
 }
 
 export const siteConfig: SiteConfig = {
@@ -66,4 +70,8 @@ Best regards,`,
     { label: "Approach", href: "#approach" },
     { label: "Contact", href: "#contact" },
   ],
+  videos: {
+    globe: process.env.NEXT_PUBLIC_GLOBE_VIDEO_URL || "/globe.mp4",
+    network: process.env.NEXT_PUBLIC_NETWORK_VIDEO_URL || "/bg_network.mp4",
+  },
 };
